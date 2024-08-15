@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine shop</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+    background-image: url("Img/flip4k.png");
+    background-position: center ;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-color:black;
+    background-attachment: fixed;
+    }
+
+    header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 30px;
+            margin-left: 30px;
+
+        }
+        .logo {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .title {
+            color: #bb925f;
+            font-size: 23px;
+            margin-right: 50px;
+            font-family: 'Brush Script MT', cursive;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #bb925f;
+            text-decoration: none;
+            font-family: 'Brush Script MT', cursive;
+            position: relative;
+        }
+     .lolo{
+        display: flex;
+        align-items: center;
+        margin-right:100px ;
+     }  
+        .Btitle{
+            font-size: 30px;
+            margin-top: 60px;
+            font-family: 'Segoe Script', cursive;
+
+        }
+
+        .navi{
+            margin-left: 80px;
+           
+        }
+        
+        .header-icon {
+            width: 24px;
+            height: 24px;
+            max-width: 32px;
+            max-height: 32px;
+            padding: 6px;
+}
+
+        .header-icon:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+}
+
+       .container {
+        flex: 1;
+        line-height: 1.1;
+        font-size: 20px;
+        font-family: sans-serif;
+        text-align: center;
+        margin-left: 750px;
+        margin-top: 170px;
+        color: #bb925f;
+        padding: 0;
+ 
+       }
+
+       .ich{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: 500px;
+       }
+        a:hover {
+                    transform: scale(1.2);
+                    transition: transform 0.3s ease-in-out;
+        }
+
+        p{
+                    color: #bb925f;
+                    font-size: 18px;
+                    font-family: 'Brush Script MT', cursive;
+
+                }
+            }
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+button{
+    width:200px;
+    height:70px;
+    background: linear-gradient(to left top, #0e0c11 50%, #18121c 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(60, 50, 106, 0.4);
+}
+button:hover span{
+    animation-play-state: paused;
+}
+@keyframes youtubeAnim{
+  0%,100%{
+    color:#261f5b22;
+  }
+  50%{
+    color:#2f1c6c;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="lolo">
+        <img src="Img/Shop/c_logp.png" alt="WebTouch" class="logo"  width="70" height="80">
+        <h1 class="title">WebTouch's Wine </h1>
+        </div>
+        <div class="navi">
+        <nav>
+                <a href="#">About us</a>
+                <a href="#">Collection</a>
+                <a href="#">Shop Now</a>
+                <a href="#">Contact Us</a>
+        </nav>
+        </div>
+        <div class="ich">
+    <div class="header-icon">
+            <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" height="32px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style> .cls-1{fill: none; stroke:#ffb90b;stroke-linecap:round;stroke-linejoin:round; stroke-width:2px;}</style></defs><title/><polyline class="cls-1" points="6 10 15 10 19 39 54 39 57 18 21 18 23.3 34"/><line class="cls-1" x1="31" x2="37" y1="50" y2="50"/><circle class="cls-1" cx="47" cy="50" r="5"/><circle class="cls-1" cx="26" cy="50" r="5"/></svg>
+        </div>
+            <div class="header-icon">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="8" x2="24" y1="19.5" y2="19.5"><stop offset="0" style="stop-color:#FACE2E"/><stop offset="1" style="stop-color:#FD9F27"/></linearGradient><path d="M8,26h16v-5c0-4.411-3.589-8-8-8s-8,3.589-8,8V26z" fill="url(#SVGID_1_)"/><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_2_" x1="13" x2="19" y1="8" y2="8"><stop offset="0" style="stop-color:#FACE2E"/><stop offset="1" style="stop-color:#FD9F27"/></linearGradient><circle cx="16" cy="8" fill="url(#SVGID_2_)" r="3"/><path d="M6,21v6c0,0.552,0.448,1,1,1h18c0.553,0,1-0.448,1-1v-6c0-4.308-2.743-7.977-6.569-9.381C20.393,10.707,21,9.427,21,8  c0-2.757-2.243-5-5-5s-5,2.243-5,5c0,1.426,0.608,2.707,1.569,3.619C8.743,13.023,6,16.692,6,21z M16,5c1.654,0,3,1.346,3,3  s-1.346,3-3,3s-3-1.346-3-3S14.346,5,16,5z M16,13c4.411,0,8,3.589,8,8v5H8v-5C8,16.589,11.589,13,16,13z"/></svg>
+        </div>
+    </div>
+    </header>
+        <div class="container">
+            <h2 class="Btitle">Discover Our Wines</h2>
+            <p class="desc"> Our wide variety of wines, from premium to regional, cater to your taste buds and preferences. Enjoy a memorable experience.
+            Feel free to browse our selection or reach out to us for more information.
+            We're here to help you discover new and exciting wines.
+            Happy wine-tasting!
+            WebTouch's Wine.
+            </p>
+            <div class="wrapper">
+                <button>
+                  BUY NOW 
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+        </div>
+</body>
+</html>
